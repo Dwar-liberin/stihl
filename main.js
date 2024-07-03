@@ -23,7 +23,7 @@
           }
        );
 
-      Analytics.active = false;
+      Analytics.active = true;
 
       } catch(e) {
         console.log("Err", e.message)
@@ -152,92 +152,92 @@
 
   
     
-      const target_image63f98bb9834_iconGeometry = new THREE.PlaneGeometry(1, 0.9965156794425087);
-   const target_image63f98bb9834_texture = await loadTexture("assets/stihl-marker.png");
-  const target_image63f98bb9834_image = new THREE.MeshBasicMaterial({
-      map: target_image63f98bb9834_texture,
+      const image_bf0f0d62_078fa708_iconGeometry = new THREE.PlaneGeometry(1, 0.5);
+   const image_bf0f0d62_078fa708_texture = await loadTexture("assets/stihl-logo.png");
+  const image_bf0f0d62_078fa708_image = new THREE.MeshBasicMaterial({
+      map: image_bf0f0d62_078fa708_texture,
     });
-    const target_image63f98bb9834 = new THREE.Mesh(target_image63f98bb9834_iconGeometry, target_image63f98bb9834_image);
-    target_image63f98bb9834.scale.set(1, 1, 1);
-    target_image63f98bb9834.position.set(0.01, -0.01, 0.01);
-    target_image63f98bb9834.rotation.set(-0.001, 0, 0);
+    const image_bf0f0d62_078fa708 = new THREE.Mesh(image_bf0f0d62_078fa708_iconGeometry, image_bf0f0d62_078fa708_image);
+    image_bf0f0d62_078fa708.scale.set(0.5, 0.5, 0.5);
+    image_bf0f0d62_078fa708.position.set(0, -0.8, 0);
+    image_bf0f0d62_078fa708.rotation.set(-0.001, 0, 0);
+    image_bf0f0d62_078fa708.userData.clickable = true
+    
+    image_bf0f0d62_078fa708.userData.eventName ="Website"
+const logo_07d2b06f_751d07d2b_iconGeometry = new THREE.CircleGeometry(0.5,32);
+   const logo_07d2b06f_751d07d2b_texture = await loadTexture("assets/circle-wa-sm_113.png");
+  const logo_07d2b06f_751d07d2b_image = new THREE.MeshBasicMaterial({
+      map: logo_07d2b06f_751d07d2b_texture,
+    });
+    const logo_07d2b06f_751d07d2b = new THREE.Mesh(logo_07d2b06f_751d07d2b_iconGeometry, logo_07d2b06f_751d07d2b_image);
+    logo_07d2b06f_751d07d2b.scale.set(0.3, 0.3, 0.3);
+    logo_07d2b06f_751d07d2b.position.set(-0.6, -0.8, 0);
+    logo_07d2b06f_751d07d2b.rotation.set(-0.001, 0, 0);
+    logo_07d2b06f_751d07d2b.userData.clickable = true
+    
+    logo_07d2b06f_751d07d2b.userData.eventName ="Whatsapp"
+const logo_dc709f98_4860dc709_iconGeometry = new THREE.CircleGeometry(0.5,32);
+   const logo_dc709f98_4860dc709_texture = await loadTexture("assets/circle-call-sm_118.png");
+  const logo_dc709f98_4860dc709_image = new THREE.MeshBasicMaterial({
+      map: logo_dc709f98_4860dc709_texture,
+    });
+    const logo_dc709f98_4860dc709 = new THREE.Mesh(logo_dc709f98_4860dc709_iconGeometry, logo_dc709f98_4860dc709_image);
+    logo_dc709f98_4860dc709.scale.set(0.3, 0.3, 0.3);
+    logo_dc709f98_4860dc709.position.set(0.6, -0.8, 0);
+    logo_dc709f98_4860dc709.rotation.set(-0.001, 0, 0);
+    logo_dc709f98_4860dc709.userData.clickable = true
+    
+    logo_dc709f98_4860dc709.userData.eventName ="Call"
+const target_imageundefibbe7f_iconGeometry = new THREE.PlaneGeometry(1, 0.9965156794425087);
+   const target_imageundefibbe7f_texture = await loadTexture("assets/stihl-marker.png");
+  const target_imageundefibbe7f_image = new THREE.MeshBasicMaterial({
+      map: target_imageundefibbe7f_texture,
+    });
+    const target_imageundefibbe7f = new THREE.Mesh(target_imageundefibbe7f_iconGeometry, target_imageundefibbe7f_image);
+    target_imageundefibbe7f.scale.set(1, 1, 1);
+    target_imageundefibbe7f.position.set(0.01, -0.01, 0.01);
+    target_imageundefibbe7f.rotation.set(-0.001, 0, 0);
     
     
     
 
-    const video_asset_f8056e29847_planeGeometry = new THREE.PlaneGeometry(1, 0.5625);
+    const video_asset_f8056ec0bcf_planeGeometry = new THREE.PlaneGeometry(1, 0.5625);
 
-    const video_asset_f8056e29847_Item0Video = await loadVideo("assets/stihl-video.mp4");
+    const video_asset_f8056ec0bcf_Item0Video = await loadVideo("assets/stihl-video.mp4");
 
-    const video_asset_f8056e29847_Item0VideoTexture = new THREE.VideoTexture(
-      video_asset_f8056e29847_Item0Video
+    const video_asset_f8056ec0bcf_Item0VideoTexture = new THREE.VideoTexture(
+      video_asset_f8056ec0bcf_Item0Video
     );
 
-    let video_asset_f8056e29847_Item0VideoMaterial
+    let video_asset_f8056ec0bcf_Item0VideoMaterial
 
-      video_asset_f8056e29847_Item0VideoMaterial = new THREE.MeshBasicMaterial({
-          map: video_asset_f8056e29847_Item0VideoTexture,
+      video_asset_f8056ec0bcf_Item0VideoMaterial = new THREE.MeshBasicMaterial({
+          map: video_asset_f8056ec0bcf_Item0VideoTexture,
         })
     
-     const video_asset_f8056e29847 = new THREE.Mesh(
-      video_asset_f8056e29847_planeGeometry,
-      video_asset_f8056e29847_Item0VideoMaterial
+     const video_asset_f8056ec0bcf = new THREE.Mesh(
+      video_asset_f8056ec0bcf_planeGeometry,
+      video_asset_f8056ec0bcf_Item0VideoMaterial
     );
 
-  video_asset_f8056e29847.position.set(0, 0, 0);
+  video_asset_f8056ec0bcf.position.set(0, 0, 0);
 
 
 
   if (isIOS) {
-    video_asset_f8056e29847_Item0Video.muted=isIOS
+    video_asset_f8056ec0bcf_Item0Video.muted=isIOS
     muteIconMesh = await loadUnmuteLogo();
     anchor.group.add(muteIconMesh);
   }
 
-  video_asset_f8056e29847_Item0Video.loop=true;
+  video_asset_f8056ec0bcf_Item0Video.loop=true;
   
-  video_asset_f8056e29847.scale.set(1.9, 1.9, 1.9);
+  video_asset_f8056ec0bcf.scale.set(1.9, 1.9, 1.9);
 
-    video_asset_f8056e29847.rotation.set(-0.001, 0, 0);
+    video_asset_f8056ec0bcf.rotation.set(-0.002, 0, 0);
 
     
   
-const logo_2cbe854f_30192cbe8_iconGeometry = new THREE.CircleGeometry(0.5,32);
-   const logo_2cbe854f_30192cbe8_texture = await loadTexture("assets/circle-wa-sm_113.png");
-  const logo_2cbe854f_30192cbe8_image = new THREE.MeshBasicMaterial({
-      map: logo_2cbe854f_30192cbe8_texture,
-    });
-    const logo_2cbe854f_30192cbe8 = new THREE.Mesh(logo_2cbe854f_30192cbe8_iconGeometry, logo_2cbe854f_30192cbe8_image);
-    logo_2cbe854f_30192cbe8.scale.set(0.3, 0.3, 0.3);
-    logo_2cbe854f_30192cbe8.position.set(-0.6, -0.8, 0);
-    logo_2cbe854f_30192cbe8.rotation.set(-0.001, 0, 0);
-    logo_2cbe854f_30192cbe8.userData.clickable = true
-    
-    logo_2cbe854f_30192cbe8.userData.eventName ="Whatsapp"
-const logo_e30c7f4d_b610e30c7_iconGeometry = new THREE.CircleGeometry(0.5,32);
-   const logo_e30c7f4d_b610e30c7_texture = await loadTexture("assets/circle-call-sm_118.png");
-  const logo_e30c7f4d_b610e30c7_image = new THREE.MeshBasicMaterial({
-      map: logo_e30c7f4d_b610e30c7_texture,
-    });
-    const logo_e30c7f4d_b610e30c7 = new THREE.Mesh(logo_e30c7f4d_b610e30c7_iconGeometry, logo_e30c7f4d_b610e30c7_image);
-    logo_e30c7f4d_b610e30c7.scale.set(0.3, 0.3, 0.3);
-    logo_e30c7f4d_b610e30c7.position.set(0.6, -0.8, 0);
-    logo_e30c7f4d_b610e30c7.rotation.set(-0.001, 0, 0);
-    logo_e30c7f4d_b610e30c7.userData.clickable = true
-    
-    logo_e30c7f4d_b610e30c7.userData.eventName ="Call"
-const image_bf0f0d62_078078a8_iconGeometry = new THREE.PlaneGeometry(1, 0.5);
-   const image_bf0f0d62_078078a8_texture = await loadTexture("assets/stihl-logo.png");
-  const image_bf0f0d62_078078a8_image = new THREE.MeshBasicMaterial({
-      map: image_bf0f0d62_078078a8_texture,
-    });
-    const image_bf0f0d62_078078a8 = new THREE.Mesh(image_bf0f0d62_078078a8_iconGeometry, image_bf0f0d62_078078a8_image);
-    image_bf0f0d62_078078a8.scale.set(0.5, 0.5, 0.5);
-    image_bf0f0d62_078078a8.position.set(0, -0.8, 0);
-    image_bf0f0d62_078078a8.rotation.set(-0.001, 0, 0);
-    image_bf0f0d62_078078a8.userData.clickable = true
-    
-    image_bf0f0d62_078078a8.userData.eventName ="Website"
       
        document.body.addEventListener("click", (e) => {
     const mouseX = (e.clientX / window.innerWidth) * 2 - 1;
@@ -270,7 +270,7 @@ const image_bf0f0d62_078078a8_iconGeometry = new THREE.PlaneGeometry(1, 0.5);
 
         if(isIOS){ 
           if (o.userData.clickable && o === muteIconMesh) {
-            video_asset_f8056e29847_Item0Video.muted=false
+            video_asset_f8056ec0bcf_Item0Video.muted=false
     
             anchor.group.remove(muteIconMesh);
             return true;
@@ -283,23 +283,23 @@ const image_bf0f0d62_078078a8_iconGeometry = new THREE.PlaneGeometry(1, 0.5);
       if (o.userData.clickable) window.showLoadingScreen();
 
       
-      if (o.userData.clickable && o === logo_2cbe854f_30192cbe8) {
+      if (o.userData.clickable && o === image_bf0f0d62_078fa708) {
+        setTimeout(()=>{
+          window.location.href = "https://www.stihl.in/en/c/water-pumps-169952?scroll=267"
+        },100)
+        }
+      
+
+      if (o.userData.clickable && o === logo_07d2b06f_751d07d2b) {
         setTimeout(()=>{
           window.location.href = "https://wa.me/9028411222?tex"
         },100)
         }
       
 
-      if (o.userData.clickable && o === logo_e30c7f4d_b610e30c7) {
+      if (o.userData.clickable && o === logo_dc709f98_4860dc709) {
         setTimeout(()=>{
           window.location.href = "tel:9028411222"
-        },100)
-        }
-      
-
-      if (o.userData.clickable && o === image_bf0f0d62_078078a8) {
-        setTimeout(()=>{
-          window.location.href = "https://www.stihl.in/en/c/water-pumps-169952?scroll=267"
         },100)
         }
       
@@ -308,11 +308,11 @@ const image_bf0f0d62_078078a8_iconGeometry = new THREE.PlaneGeometry(1, 0.5);
     })
     
       
-    
-anchor.group.add(video_asset_f8056e29847)
-anchor.group.add(logo_2cbe854f_30192cbe8)
-anchor.group.add(logo_e30c7f4d_b610e30c7)
-anchor.group.add(image_bf0f0d62_078078a8)
+    anchor.group.add(image_bf0f0d62_078fa708)
+anchor.group.add(logo_07d2b06f_751d07d2b)
+anchor.group.add(logo_dc709f98_4860dc709)
+
+anchor.group.add(video_asset_f8056ec0bcf)
 
 
     anchor.onTargetFound = () => {
@@ -329,20 +329,21 @@ anchor.group.add(image_bf0f0d62_078078a8)
 
 
 
+                  executeAnimation({"name":"fade","state":"in","value":-1.2,"duration":0,"delay":0,"event":"load"}, video_asset_f8056ec0bcf)
 
      
-      video_asset_f8056e29847_Item0Video.play();
+      video_asset_f8056ec0bcf_Item0Video.play();
     };
 
 
     anchor.onTargetLost = () => {
-       video_asset_f8056e29847_Item0Video.pause();
+       video_asset_f8056ec0bcf_Item0Video.pause();
 
         
 
 
 
-
+animationManager.resetObject(name)
     }
     
     
